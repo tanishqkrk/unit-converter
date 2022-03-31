@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./ham.js" defer></script>
+    <script src="https://kit.fontawesome.com/cffed4b148.js" crossorigin="anonymous"></script>
+    <style>
+        .firstUnit {
+            background: hsla(356, 76%, 50%, 1);
+
+            background: linear-gradient(90deg, hsla(356, 76%, 50%, 1) 0%, hsla(14, 63%, 36%, 1) 100%);
+
+            background: -moz-linear-gradient(90deg, hsla(356, 76%, 50%, 1) 0%, hsla(14, 63%, 36%, 1) 100%);
+
+            background: -webkit-linear-gradient(90deg, hsla(356, 76%, 50%, 1) 0%, hsla(14, 63%, 36%, 1) 100%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#E01F2D", endColorstr="#943C22", GradientType=1);
+        }
+
+        .secondUnit__number--input {
+            color: hsla(356, 76%, 50%, 1);
+            border-bottom: 2px solid hsla(356, 76%, 50%, 1);
+
+        }
+
+        #firstUnit__input--Units {
+            color: hsla(356, 76%, 50%, 1);
+
+        }
+
+        #secondUnit__input--Units {
+            color: hsla(356, 76%, 50%, 1);
+        }
+
+        .hamitem {
+            color: hsla(356, 76%, 50%, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hamburger">
+        <div class="ham ham1"></div>
+        <div class="ham ham2"></div>
+        <div class="ham ham3"></div>
+    </div>
+    <div class="hammenu">
+        <div class="hammenu-item"><a href="./Area.html" class="hamitem">Area</a></div>
+        <div class="hammenu-item"><a href="./datarate.html" class="hamitem">Bitrate</a></div>
+        <div class="hammenu-item"><a href="./index.html" class="hamitem">Length</a></div>
+        <div class="hammenu-item"><a href="./datasto.html" class="hamitem">Data Storage</a></div>
+        <div class="hammenu-item"><a href="./energy.html" class="hamitem">Energy</a></div>
+        <div class="hammenu-item"><a href="./frequency.html" class="hamitem">Frequency</a></div>
+        <div class="hammenu-item"><a href="./fueleco.html" class="hamitem">Fuel Economy</a></div>
+        <div class="hammenu-item"><a href="./mass.html" class="hamitem">Mass</a></div>
+        <div class="hammenu-item"><a href="./plane.html" class="hamitem">Plane Angle</a></div>
+        <div class="hammenu-item"><a href="./pressure.html" class="hamitem">Pressure</a></div>
+        <div class="hammenu-item"><a href="./speed.html" class="hamitem">Speed</a></div>
+        <div class="hammenu-item"><a href="./temp.html" class="hamitem">Temperature</a></div>
+        <div class="hammenu-item"><a href="./time.html" class="hamitem">Time</a></div>
+
+
+
+
+
+    </div>
+    <div class="mainPart firstUnit">
+        <div class="firstUnit__number inputContainer"><input placeholder="Speed" type="number"
+                class="inputField firstUnit__number--input">
+        </div>
+        <div class="firstUnit__input">
+            <select name="firstUnit__input--Units" id="firstUnit__input--Units">
+                <option value="1" class="firstUnit__input--Units-unit">Miles per hour</option>
+                <option value="2" class="firstUnit__input--Units-unit">Foot per second</option>
+                <option value="3" class="firstUnit__input--Units-unit">Meter per second</option>
+                <option value="4" class="firstUnit__input--Units-unit">Kilometer per second</option>
+                <option value="4" class="firstUnit__input--Units-unit">Knot</option>
+
+            </select>
+        </div>
+    </div>
+    <button type="submit"><i class="fa-solid fa-arrow-right-arrow-left switch"></i></button>
+    <div class="mainPart secondUnit">
+        <div class="inputField secondUnit__number--input inputContainer"></div>
+
+        <div class="secondUnit__input">
+            <select name="secondUnit__input--Units" id="secondUnit__input--Units">
+                <option value="1" class="secondUnit__input--Units-unit">Miles per hour</option>
+                <option value="2" class="secondUnit__input--Units-unit">Foot per second</option>
+                <option value="3" class="secondUnit__input--Units-unit">Meter per second</option>
+                <option value="4" class="secondUnit__input--Units-unit">Kilometer per second</option>
+                <option value="4" class="secondUnit__input--Units-unit">Knot</option>
+
+            </select>
+        </div>
+    </div>
+
+</body>
+
+</html>

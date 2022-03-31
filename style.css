@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button {
+    background-color: white;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    border: none;
+    outline: 0.1px solid black;
+    position: absolute;
+    font-size: 2em;
+    transition: .3s;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.mainPart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* .firstUnit {
+    background: hsla(217, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1);
+} */
+
+.inputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5vh 0;
+}
+
+
+.firstUnit__number--input {
+    font-size: 5em;
+    color: white;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 70%;
+}
+
+.secondUnit__number--input {
+    height: 16vh;
+    font-size: 5em;
+    /* color: hsla(217, 100%, 50%, 1); */
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    /* border-bottom: 2px solid hsla(217, 100%, 50%, 1); */
+    width: 70%;
+}
+
+.inputField:focus-visible {
+    /* border: none; */
+    outline: none;
+}
+
+#firstUnit__input--Units {
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
+    /* color: hsla(217, 100%, 50%, 1); */
+    border-radius: 100px;
+    text-align: center;
+
+}
+
+#firstUnit__input--Units:focus-visible {
+    outline: none;
+    /* background: transparent; */
+}
+
+#secondUnit__input--Units {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    /* color: hsla(217, 100%, 50%, 1); */
+    border-radius: 100px;
+    text-align: center;
+
+}
+
+#secondUnit__input--Units:focus-visible {
+    outline: none;
+    /* background: transparent; */
+}
+
+.firstUnit__number--input::placeholder,
+.secondUnit__number--input::placeholder {
+    opacity: .5;
+    text-align: center;
+    color: white;
+}
+
+.hamburger {
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+    z-index: 2;
+}
+
+.ham1 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 5px;
+    /* border-radius: ; */
+}
+
+.ham2 {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 5px;
+    /* border-radius: ; */
+}
+
+.ham3 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 5px;
+    /* border-radius: ; */
+}
+
+.hammenu {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    left: 0;
+    /* width: 50vw; */
+    width: 0;
+    transition: .3s;
+
+}
+
+.hammenu-on {
+    width: 50vw;
+
+}
+
+.hammenu-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: none;
+    /* max-height: 100%; */
+}
+
+.itemOn {
+    display: flex;
+}
+
+.hamitem {
+    text-decoration: none;
+    transition: .3s;
+    /* display: none; */
+}
+
+.hamitem:hover {
+    font-weight: 500;
+}
+
+@media(max-width:1000px) {
+    body {
+        flex-wrap: wrap;
+    }
+
+    .mainPart {
+        height: 50vh;
+    }
+
+    .firstUnit__number--input,
+    .secondUnit__number--input {
+        font-size: 3em;
+    }
+
+    .hammenu-on {
+        width: 100vw;
+    }
+}
