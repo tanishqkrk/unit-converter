@@ -3,11 +3,12 @@ let output = document.querySelector('.secondUnit__number--input');
 let convertButton = document.querySelector('.switch');
 let inputUnit = document.querySelector('#firstUnit__input--Units');
 let outputUnit = document.querySelector('#secondUnit__input--Units');
-
+inputUnit.addEventListener('change', convert);
+outputUnit.addEventListener('change', convert);
 
 input.addEventListener('input', convert);
 function convert(e){
-    e.preventDefault();
+    // e.preventDefault();
     // Kilometer to others
     if(inputUnit.selectedIndex == 0 && outputUnit.selectedIndex == 0){
         output.innerText = input.value;
